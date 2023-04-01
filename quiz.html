@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background: #ee0979 !important; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #ff6a00,
+        #ee0979
+      ) !important; /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ff6a00, #ee0979) !important;
+    }
+  </style>
+  <body>
+    <div class="wrapper cont">
+      <div class="quiz">
+        <div class="quiz-header">
+          <div class="quiz_user"><h4 class="quiz-username">Welcome</h4></div>
+          <div class="quiz_timer"><span class="time"> 00 : 00 </span></div>
+        </div>
+        <div class="quiz-body">
+          <div id="questions-cont">
+            <!-- <h2>Q1. What Is The Full Form Of Html ?</h2>
+            <ul class="option-group">
+              <li class="option">option 1</li>
+              <li class="option">option 2</li>
+              <li class="option">option 3</li>
+              <li class="option">option 4</li>
+            </ul> -->
+          </div>
+
+          <button class="btn-next">Next Question</button>
+        </div>
+      </div>
+    </div>
+    <script src="timer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

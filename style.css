@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fira+Sans&family=Fira+Sans+Condensed&family=Merriweather&family=Montserrat:wght@400;600&family=Mulish&family=Odibee+Sans&family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400&family=Sofia+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree";
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  /* background-color: #222; */
+
+  background: #ee0979 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979) !important;
+}
+
+.welcome_text {
+  /* background-color: #fff; */
+
+  width: 400px;
+}
+
+.welcome_form input,
+.welcome_form button {
+  display: block;
+  width: 100%;
+  font-family: "Bai jamjuree";
+}
+
+.welcome_form input {
+  margin-bottom: 1.5rem;
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  color: #efefef;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #efefef;
+  text-align: center;
+}
+
+.welcome_form input:focus {
+  outline: none;
+}
+
+.welcome_form button {
+  padding: 20px 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.welcome_form button:hover {
+  background-color: transparent;
+  box-shadow: 0 0 10px #fff;
+  color: #eee;
+}
+
+.cont {
+  overflow-y: scroll;
+}
+
+/* quiz container */
+
+.quiz {
+  width: 800px;
+  min-height: 500px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+
+  border-radius: 10rem;
+  /* background-color: #222; */
+  background: #16bffd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cb3066,
+    #16bffd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cb3066,
+    #16bffd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: grid;
+  grid-template-rows: 60px auto;
+}
+
+.quiz-header {
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+  border-radius: 0.3rem 0.3rem 0 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.quiz-body {
+  background-color: #ecf0f1;
+}
+
+.quiz_timer {
+  background-color: #50a7ff;
+  padding: 0.5rem 3rem;
+  border-radius: 10rem;
+  font-weight: 700;
+  color: #ecf0f1;
+}
+
+.quiz-body {
+  padding: 2rem 2rem;
+}
+
+.option-group {
+  list-style-type: none;
+  margin: 2rem 0;
+  line-height: 2;
+}
+
+.option-group li {
+  font-size: 1.4rem;
+}
+
+.option {
+  background-color: #fff;
+  padding: 15px 20px;
+  width: 500px;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  align-items: center;
+  transition: 0.2s;
+  display: flex;
+  border: 2px solid transparent;
+}
+
+.btn-ans {
+  color: #ecf0f1;
+  background-color: #222;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 10rem;
+}
+
+.option:hover {
+  cursor: pointer;
+
+  border: 2px solid #50a7ff;
+}
+
+.btn-next {
+  padding: 1rem 3rem;
+  margin-left: 0rem;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #ecf0f1;
+  border-radius: 10rem;
+  transition: 0.3s;
+  /* background-color: darkblue; */
+  background: #8a2387; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f27121,
+    #e94057,
+    #8a2387
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-next:hover {
+  color: #ecf0f1;
+  background-color: #222;
+  cursor: pointer;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+.active {
+  background-color: #50a7ff;
+  color: #efefef;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fira+Sans&family=Fira+Sans+Condensed&family=Merriweather&family=Montserrat:wght@400;600&family=Mulish&family=Odibee+Sans&family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto+Slab:wght@500&family=Roboto:wght@300;400&family=Sofia+Sans&display=swap");
+
+    body {
+      font-family: "Bai Jamjuree";
+      /* background-color: #222; */
+      background: #ee0979; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #ff6a00,
+        #ee0979
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #ff6a00,
+        #ee0979
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      position: relative;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #222;
+    }
+
+    .main {
+      width: 100%;
+      min-height: 100vh;
+
+      overflow: auto;
+      position: relative;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 17rem; */
+      justify-content: center;
+    }
+
+    .card {
+      width: 60%;
+      height: 100%;
+      border-radius: 1rem;
+      background-color: #222;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+      padding: 2rem 2rem;
+      margin: 2rem auto;
+      line-height: 3;
+      /* transform: skewX(-10deg); */
+    }
+
+    .card-title {
+      font-size: 2rem;
+      color: aliceblue;
+    }
+
+    .card-body {
+      width: 100%;
+      line-height: 2;
+      height: 100%;
+    }
+
+    .show {
+      background-color: #fff;
+    }
+
+    .paras {
+      font-size: 1.4rem;
+      color: aliceblue;
+    }
+  </style>
+  <body>
+    <div class="main"></div>
+
+    <script src="answersQuiz.js"></script>
+  </body>
+</html>
